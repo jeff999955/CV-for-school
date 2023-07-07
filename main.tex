@@ -1,0 +1,185 @@
+\documentclass[A4]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{\href{https://github.com/jeff999955}{\Large Jeff Tseng}} & Email : \href{jeff999955@gmail.com}{jeff999955@gmail.com}\\
+      \iffalse
+            Vancouver, BC, V3T \fi & GitHub: \href{https://github.com/jeff999955}{jeff999955} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National Taiwan University}{\textit{GPA 3.92/4.0}}
+{Bachelor of Science in Computer Science and Information Engineering}{2019 -- 2023}
+
+\resumeSubheading
+{CMLab}{Communications and Multimedia Laboratory}
+{Undergraduate Research Student}{Jun 2022 - Nov 2022}
+\resumeSubHeadingListEnd
+
+%-----------CURRENT-SITUATION-----------------
+\section{Employment History}
+\resumeSubHeadingListStart
+\resumeSubheading
+{GOGOX}{}{Data Scientist Intern}{Sep, 2022 - present}
+\resumeItemListStart
+\resumeItem{Working Time Labeling}
+{Develop an ML algorithm based on feature selection to identify timestamp of events based on label driver GPS trajectory data or order data through.}
+\resumeItem{HMM Map Matching}{Develop an application that matches GPS coordinates to HK roads using OpenStreetMap and generates the most possible route using Hidden Markov Model based on a series of coordinate.}
+\resumeItem{Kernel Module Development}
+{Research on implementing software support for role based memory access like CHERI hardware extension.}
+\resumeItemListEnd
+
+\resumeSubheading
+{ASUS}{Intelligence Cloud Service}
+{Software Engineering Intern}{Jul 2022 - Sep 2022}
+\resumeItemListStart
+\resumeItem{}
+{write what you acheived in this internship}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{On-campus Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{NTU CSIE Network Administration and System Administration}{}
+{Lead of Wired Team}{2022 - present}
+\resumeItemListStart
+\resumeItem{Wired Network}
+{Maintain and monitor the wired network infrastructure in our department.}
+% 寫多一點你幹了啥，比如說把機房燒了啥的
+\resumeItemListEnd
+
+\resumeSubheading
+{Secure System Laboratory}{}{Undergraduate Research Student}{Sep, 2022 - present}
+\resumeItemListStart
+\resumeItem{Kernel Module Development}
+% 這個經歷對於找 SWE 工作好像不是很有意義嗎（？）
+{Research on implementing software support for role based memory access like CHERI hardware extension.}
+\resumeItemListEnd
+
+\resumeSubheading
+{DLCV}{Deep Learning for Computer Vision}
+{Teaching Assistant}{2022 Fall}
+
+
+
+\resumeSubheading
+{Data Structure and Algorithms}{}
+{Teaching Assistant}{2021 Spring}
+
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-------------
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Orbeez-SLAM
+}{CMLab}{A Real-time Monocular Visual SLAM
+      with ORB Features and NeRF-realized Mapping}{2022/09}
+\resumeItemListStart
+\resumeItem{arXiv}{
+https://arxiv.org/abs/2209.13274, accepted by ICRA 2023}
+\resumeItem{arXiv}{
+https://arxiv.org/abs/2209.13274, accepted by ICRA 2023}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Machine Learning, Deep Learning related}
+{\href{https://github.com/jeff999955/Machine-Learning-2021-Spring}{ML}, \href{https://github.com/jeff999955/DLCV-2021-Fall}{Computer Vision},
+      \href{https://github.com/jeff999955/ADL-2022-Spring}{NLP}}
+{PyTorch, pandas, huggingface, scikit-learn, XGBoost}{}
+\resumeItemListStart
+\resumeItem{\href{https://github.com/AI-LLZ}{Coughvid}}{COVID-19 prediction using both audio waveform and clinical data.}
+\resumeItem{\href{https://neverloses.notion.site/HTML-0161da99ac5f4f0a9a00757ce07afb8f}{Learning Theory}}{Walk through the theories behind machine learning and analyze different methods.}
+\resumeItem{\href{https://github.com/jeff999955/ADL-2022-Spring/tree/main/Final}{Dialog Transition}} {Guide the pretrained chat bot to a specific topic, with either vanilla Language Model or blended with GNN (Knowledge Graph).}
+\resumeItem{\href{https://github.com/jeff999955/DLCV-2021-Fall/tree/main/Final_Project}{Skull Fracture Detection}}
+{Pipelined image classification and object detection applied onto CT images.}
+\resumeItemListEnd
+\resumeSubheading
+{Software}{}
+{Flutter, Git, C, Java, UML}{}
+\resumeItemListStart
+\resumeItem{Japanese Memorizer}{An app to help users learn Japanese vocabulary, written in Flutter. Co-worked with a team and we use Git and Slack for version control and communication, respectively.}
+\resumeItem{\href{https://github.com/Syllo/nvtop/pull/134\#issuecomment-1146659375}{PR - nvtop}}{My first contribution to open source community, adding user filtering feature to a widely used GPU monitoring tool - nvtop. The TUI app is written in pure C with \texttt{ncurse}.}
+\resumeItem{\href{https://github.com/jeff999955/FOOP_2021}{OOP}}{Many OOP principles and design pattern, implemented in Java. Design UML prior to production.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
