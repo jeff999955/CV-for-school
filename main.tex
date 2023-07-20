@@ -82,28 +82,7 @@
 
 \resumeSubHeadingListEnd
 
-%-----------CURRENT-SITUATION-----------------
-\section{Employment History}
-\resumeSubHeadingListStart
-\resumeSubheading
-{GOGOX}{}{Data Scientist Intern}{Sep, 2022 - present}
-\resumeItemListStart
-\resumeItem{Working Time Labeling}
-{Develop an ML algorithm based on feature selection to identify timestamp of events based on label driver GPS trajectory data or order data through.}
-\resumeItem{HMM Map Matching}{Develop an application that matches GPS coordinates to HK roads using OpenStreetMap and generates the most possible route using Hidden Markov Model based on a series of coordinate.}
-\resumeItem{Kernel Module Development}
-{Research on implementing software support for role based memory access like CHERI hardware extension.}
-\resumeItemListEnd
 
-\resumeSubheading
-{ASUS}{Intelligence Cloud Service}
-{Software Engineering Intern}{Jul 2022 - Sep 2022}
-\resumeItemListStart
-\resumeItem{}
-{write what you acheived in this internship}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{On-campus Experience}
@@ -111,63 +90,118 @@
 
 \resumeSubheading
 {NTU CSIE Network Administration and System Administration}{}
-{Lead of Wired Team}{2022 - present}
-\resumeItemListStart
-\resumeItem{Wired Network}
-{Maintain and monitor the wired network infrastructure in our department.}
-% 寫多一點你幹了啥，比如說把機房燒了啥的
-\resumeItemListEnd
+{Lead of Wired Network Team}{2022 - 2023}
+\begin{itemize}
+  \item Develop the daily log synchronization tools that integrate with Google Spreadsheet.
+  \item Develop the network infrastructure parser and visualization toolkit.
+  \item Lead the junior member to complete the project of command line interface for HP switch.
+\end{itemize}
 
 \resumeSubheading
 {DLCV}{Deep Learning for Computer Vision}
 {Teaching Assistant}{2022 Fall}
+\begin{itemize}
+  \item Design questions for assignment and hold dedicated TA hours.
+\end{itemize}
 
+\resumeSubheading{VLLab}{Vision \& Language Lab}{Undergraduate Research Student}{2022}
+\begin{itemize}
+  \item  Research on framework of different training scenario for text guided image manipulation.
+\end{itemize}
+
+\resumeSubheading{CMLab}{Communications \& Multimedia Lab}{Undergraduate Research Student}{2022}
+\resumeItemListStart
+\resumeItem{Orbeez-SLAM}{accepted by ICRA 2023}
+\resumeItemListEnd
+
+\resumeSubheading
+{Miulab}{Machine \& Intelligence Understanding Lab}
+{Undergraduate Research Student}{2021 Fall - 2022 Spring}
+\begin{itemize}
+  \item Research on enhancing Automatic Speech Recognition (ASR) and Spoken Language Understanding by natural language pretraining.
+  \item Arrange over \textbf{20 cross-modal (text and speech) tasks} between text and audio, their benchmarks and datasets.
+\end{itemize}
 
 
 \resumeSubheading
 {Data Structure and Algorithms}{}
 {Teaching Assistant}{2021 Spring}
+\begin{itemize}
+  \item Design activity about data structure with Kahoot and online judge platform.
+\end{itemize}
 
 \resumeSubHeadingListEnd
 
 %-----------PUBLICATIONS-------------
-\section{Publications}
+\section{Publication}
 \resumeSubHeadingListStart
 \resumeSubheading
 {Orbeez-SLAM
 }{CMLab}{A Real-time Monocular Visual SLAM
   with ORB Features and NeRF-realized Mapping}{2022/09}
-\resumeItemListStart
-\resumeItem{arXiv}{
-  https://arxiv.org/abs/2209.13274, accepted by ICRA 2023}
-\resumeItem{arXiv}{
-  https://arxiv.org/abs/2209.13274, accepted by ICRA 2023}
-\resumeItemListEnd
+\begin{itemize}
+  \item accepted by ICRA 2023
+  \item Use \textbf{CUDA \& C++}
+        to migrate \textbf{instant-ngp NeRF} to \textbf{ORB-SLAM} to achieve \textbf{3D scene reconstruction} with \textbf{800x speedup }over other NeRF-based SLAMs.
+  \item Achieve better reconstruction quality and more precise localization and mapping (lower ATE).
+\end{itemize}
 \resumeSubHeadingListEnd
+
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Side-project}
+\begin{itemize}
+  \item \textbf{Coughvid}: Integrate audio models by \textbf{Pytorch} for cough detection and linear models for clinical data to a \textbf{Flask} API designed for \textbf{COVID-19} cough detection.
+  \item \textbf{Japanese Memorizer App}: Develop vocabulary learning mobile application with \textbf{Flutter, bloc}, \textbf{firebase} backend, and the CI/CD pipeline on \textbf{codemagic}.
+  \item \textbf{nvtop modification}:  Add user filtering feature, in \textbf{C}, to an open source GPU monitoring tool - nvtop.
+\end{itemize}
+%-----------CURRENT-SITUATION-----------------
+\section{Employment History}
+
 \resumeSubHeadingListStart
-\resumeSubheading
-{Machine Learning, Deep Learning related}
-{\href{https://github.com/jeff999955/Machine-Learning-2021-Spring}{ML}, \href{https://github.com/jeff999955/DLCV-2021-Fall}{Computer Vision},
-  \href{https://github.com/jeff999955/ADL-2022-Spring}{NLP}}
-{PyTorch, pandas, huggingface, scikit-learn, XGBoost}{}
+
+\vspace{-1pt}\item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{GoGoX} &  \\
+  \textit{\small Software Engineer, Data Scientist} & \textit{\small Jun, 2023 - present} \\
+  \textit{\small Data Scientist Intern} & \textit{\small Sep, 2022 - Jun, 2023} \\
+\end{tabular*}\vspace{-5pt}
+
 \resumeItemListStart
-\resumeItem{\href{https://github.com/AI-LLZ}{Coughvid}}{COVID-19 prediction using both audio waveform and clinical data.}
-\resumeItem{\href{https://neverloses.notion.site/HTML-0161da99ac5f4f0a9a00757ce07afb8f}{Learning Theory}}{Walk through the theories behind machine learning and analyze different methods.}
-\resumeItem{\href{https://github.com/jeff999955/ADL-2022-Spring/tree/main/Final}{Dialog Transition}} {Guide the pretrained chat bot to a specific topic, with either vanilla Language Model or blended with GNN (Knowledge Graph).}
-\resumeItem{\href{https://github.com/jeff999955/DLCV-2021-Fall/tree/main/Final_Project}{Skull Fracture Detection}}
-{Pipelined image classification and object detection applied onto CT images.}
+\resumeItem{Working Time Labeling}
+{}
+\begin{itemize}
+  \item Develop an \textbf{ML algorithm} with \textbf{feature selection} on label driver GPS data and order data to \textbf{automate the labeling process} of pickup and arriving time.
+  \item \textbf{Identify the anomaly} behavior of driver with \textbf{autoencoder} to help filter out cases unsuitable for labeling model.
+  \item \textbf{Analyze the correlation} between GPS data and order data to explore room for improvement.
+\end{itemize}
+
+\resumeItem{GPS Map Matching}{}
+\begin{itemize}
+  \item Build the driver travel time database to improve pick up estimation model and order working time model.
+  \item Use \textbf{Python shapely} to map GPS point to most probable road segment on \textbf{OpenStreetMap}.
+  \item Find the route with {Hidden Markov Model} with \textbf{Python} given possible road segments.
+  \item Validate correctness of the algorithm by visualizing \textbf{OpenStreetMap} and GPS track with \textbf{Python folium}.
+\end{itemize}
+
+\resumeItem{GoGoX QA Bot}{}
+\begin{itemize}
+  \item Design the pipeline based on \textbf{OpenAI}, \textbf{Pinecone}, and \textbf{Langchain} to support \textbf{customized  ChatGPT} with \textbf{prompt engineering}.
+  \item Ingest the customer service data to \textbf{Pinecone} as the \textbf{vector database}, the knowledge base of the ChatBot.
+  \item Expose the ChatBot as API and web interface on \textbf{Google Cloud}.
+\end{itemize}
 \resumeItemListEnd
+
 \resumeSubheading
-{Software}{}
-{Flutter, Git, C, Java, UML}{}
+{ASUS}{Intelligence Cloud Service}
+{Software Engineering Intern}{Jul 2022 - Sep 2022}
 \resumeItemListStart
-\resumeItem{Japanese Memorizer}{An app to help users learn Japanese vocabulary, written in Flutter. Co-worked with a team and we use Git and Slack for version control and communication, respectively.}
-\resumeItem{\href{https://github.com/Syllo/nvtop/pull/134\#issuecomment-1146659375}{PR - nvtop}}{My first contribution to open source community, adding user filtering feature to a widely used GPU monitoring tool - nvtop. The TUI app is written in pure C with \texttt{ncurse}.}
-\resumeItem{\href{https://github.com/jeff999955/FOOP_2021}{OOP}}{Many OOP principles and design pattern, implemented in Java. Design UML prior to production.}
+\resumeItem{Selenium IDE Modification}
+{}
+\begin{itemize}
+  \item Add popup menu to original IDE with \textbf{Electron} and \textbf{NodeJS} to support additional functions and \textbf{facilitate the testing} phase.
+  \item \textbf{Eliminate 19} out of \textbf{23} testcases that is unable to be automatically recorded with \textbf{our modified Selenium}.
+\end{itemize}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-
 \end{document}
